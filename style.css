@@ -1,0 +1,115 @@
+/* Fundo de imagem pego no FIGMA */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap");
+
+body {
+  background: linear-gradient(236.85deg, #041832 27.26%, #3468a7 96.03%);
+  font-family: "Roboto", sans-serif;
+}
+
+/* para estilizar uma classe, chamamos primeiro com o . e depois o nome da classe */
+.container {
+  background: #ecf4ff;
+  /*  cor da fonte  */
+  color: #1c1c1c;
+  /*  margem  */
+  margin: 64px;
+  /*  borda.  raio  deixar cada vez mais redonda a borda do elemento*/
+  border-radius: 20px;
+  /*  sombra da box  */
+  box-shadow: 6px 6px 6px #0e1d2f;
+  /*  acrescenta uma borda no elemento dentro da box, por exemplo, a imagem  */
+  padding: 20px;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perfil {
+  display: flex;
+}
+
+.perfil-foto {
+  border-radius: 400px;
+  max-height: 160px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.titulo {
+  margin-left: 16px;
+}
+
+/* altera um valor expecífico em cada Class */
+.titulo h1 {
+  /*  altera o tipo (peso) da fonte (google font)  */
+  font-weight: 700;
+  /*  altera o tamanho da fonte  */
+  font-size: 36px;
+}
+
+.titulo h3 {
+  /*  altera o tipo (peso) da fonte (google font)  */
+  font-weight: 400;
+  /*  altera o tamanho da fonte  */
+  font-size: 24px;
+}
+
+.tema button {
+  align-self: flex-end;
+  font-weight: 400;
+  font-size: 24px;
+  padding: 8px 16px;
+  background: #ecf4ff;
+  border-radius: 100px;
+}
+
+.projetos {
+  display: flex;
+  flex-direction: column;
+  /*   Plano de fundo gradiente */
+  background: linear-gradient(230.65deg, #499cfe 27.49%, #9cc8fc 83.19%);
+  margin-top: 32px;
+  padding: 32px;
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+  border-radius: 20px;
+}
+
+.projetos-titulo {
+  list-style: none;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.projetos-item {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 48px;
+}
+
+/* selecionando a âncora para remover o sublinhado */
+/* Toda tag 'a' dentro do ítem 'projetos-item' será estilizado */
+.projetos-item a {
+  color: #1c1c1c;
+  text-decoration: none;
+}
+
+.dark {
+  background: linear-gradient(236.85deg, #375b86 27.26%, #6b87a9 96.06%);
+}
+
+.dark .container {
+  background: #333439;
+  color: #f6f6f6;
+}
+
+.dark .projetos {
+  color: #1c1c1c;
+}
+
+.dark .tema button {
+  background: #1c1c1c;
+  color: #ffffff;
+  border: 2px solid #f7f7f7;
+}
